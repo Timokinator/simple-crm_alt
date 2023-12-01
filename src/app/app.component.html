@@ -1,15 +1,15 @@
 <mat-drawer-container class="mat-drawer-container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
 
-    <div class="logo-container"> 
+    <div class="logo-container">
       PLATZ FÜR LOGO
     </div>
 
 
-    <ul> 
-       <li><mat-icon>dashboard</mat-icon>Dashboard</li>
-       <li><mat-icon>perm_identity</mat-icon>User</li>
-       
+    <ul>
+      <li routerLink=""><mat-icon>dashboard</mat-icon>Dashboard</li>
+      <li routerLink="user"><mat-icon>perm_identity</mat-icon>User</li>
+
     </ul>
 
 
@@ -24,5 +24,11 @@
         <span>Simple CRM</span>
       </mat-toolbar-row>
     </mat-toolbar>
+
+    <div class="container-router">
+      <router-outlet></router-outlet>
+    </div>
+
+
   </div>
 </mat-drawer-container>
